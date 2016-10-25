@@ -2,7 +2,7 @@
   "root": "src",
   "title": "Rusoto",
   "language": "en",
-  "plugins": ["-highlight", "prism"],
+  "plugins": ["-highlight", "-sharing", "prism"],
   "structure": {
     "summary": "SUMMARY.md"
   }
