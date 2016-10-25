@@ -2,7 +2,13 @@
   "root": "src",
   "title": "Rusoto",
   "language": "en",
-  "plugins": ["-highlight", "-sharing", "prism"],
+  "plugins": ["-highlight", "-sharing", "edit-link", "prism"],
+  "pluginsConfig": {
+    "edit-link": {
+      "base": "https://github.com/rusoto/rusoto.github.io/tree/source/src",
+      "label": "EDIT"
+    }
+  },
   "structure": {
     "summary": "SUMMARY.md"
   }
