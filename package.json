@@ -1,0 +1,25 @@
+{
+  "name": "rusoto.github.io",
+  "version": "1.0.0",
+  "description": "Rusoto GitBook documentation",
+  "main": "index.js",
+  "dependencies": {
+    "gitbook-cli": "^2.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "docs:prepare": "gitbook install",
+    "docs:watch": "npm run docs:prepare && gitbook serve",
+    "docs:build": "npm run docs:prepare && rm -rf _book && gitbook build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rusoto/rusoto.github.io.git"
+  },
+  "author": "Rusoto Project Developers (https://github.com/rusoto)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rusoto/rusoto.github.io/issues"
+  },
+  "homepage": "https://github.com/rusoto/rusoto.github.io#readme"
+}
