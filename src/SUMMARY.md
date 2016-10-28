@@ -8,3 +8,4 @@
     * [Supporting Both](setup-hybrid.md)
 * [Usage & Example](usage-and-example.md)
 * [Supported AWS Services](supported-aws-services.md)
+* [Debugging](debugging.md)
