@@ -17,7 +17,7 @@ git remote add upstream "https://$GH_TOKEN@github.com/rusoto/rusoto.github.io.gi
 git fetch upstream
 git reset upstream/master
 
-#echo "rusoto.rs" > CNAME
+echo "rusoto.org" > CNAME
 
 touch .
 
