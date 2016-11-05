@@ -1,6 +1,10 @@
 # Supported AWS Services
 
-To use the a service, enable its cargo feature.  Stability levels are detailed below.
+To use a service, enable its cargo feature.  Stability levels:
+
+**Stable:** service has not caused many bug reports.
+
+**Needs improvement:** service has either generated many bug reports and/or is a little-used service in Rusoto. 
 
 Service | Cargo feature | Stability
 --------|---------------|---------
@@ -41,9 +45,3 @@ All supported services | all | N/A
 [Storage Gateway](https://aws.amazon.com/storagegateway/) | storagegateway | Needs improvement
 [Web Application Firewall](https://aws.amazon.com/waf/) | waf | Needs improvement
 [WorkSpaces](https://aws.amazon.com/workspaces/) | workspaces | Needs improvement
-
-## Stability levels
-
-**Stable:** service has not caused many bug reports.
-
-**Needs improvement:** service has either generated many bug reports and/or is a little-used service in Rusoto. 
