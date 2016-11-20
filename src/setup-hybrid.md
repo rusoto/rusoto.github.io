@@ -31,4 +31,4 @@ stable with the command:
 
 [cargo-feature]: http://doc.crates.io/manifest.html#the-features-section
 [serde]: https://github.com/serde-rs/serde
-[stable-approach]: https://rusoto.github.io/setup-stable.html
+[stable-approach]: /setup-stable.html

@@ -11,5 +11,8 @@
   },
   "structure": {
     "summary": "SUMMARY.md"
+  },
+  "variables": {
+    "domain": "http://rusoto.org"
   }
 }
