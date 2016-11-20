@@ -22,7 +22,7 @@ support stable and nightly, or both via feature flags.
 [cargo-build-script]: http://doc.crates.io/build-script.html
 [cargo-feature]: http://doc.crates.io/manifest.html#the-features-section
 [serde]: https://github.com/serde-rs/serde
-[setup-hybrid]: https://rusoto.github.io/setup-hybrid.html
-[setup-nightly]: https://rusoto.github.io/setup-nightly.html
-[setup-stable]: https://rusoto.github.io/setup-stable.html
+[setup-hybrid]: /setup-hybrid.html
+[setup-nightly]: /setup-nightly.html
+[setup-stable]: /setup-stable.html
 [syntex]: https://serde.rs/technical-details.html#syntex

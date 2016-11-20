@@ -25,4 +25,4 @@ features = ["s3", "sqs", "unstable"]
 ```
 
 [serde]: https://github.com/serde-rs/serde
-[stable-approach]: https://rusoto.github.io/setup-stable.html
+[stable-approach]: /setup-stable.html
