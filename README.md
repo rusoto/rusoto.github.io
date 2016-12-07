@@ -32,6 +32,6 @@ This repo has a slightly unconventional branching setup. Most GitHub Pages-based
 repos tend to use `master` for the source, and `gh-pages` for the rendered
 website. Because this repo is intended to host an organization webpage, then per
 [GitHub's requirements](https://help.github.com/articles/user-organization-and-project-pages/)
-the source of the website MUST appear on the `master` branch. Since the `master`
+the rendered website MUST appear on the `master` branch. Since the `master`
 branch can no longer be used to hold the source, a separate branch must be made
 for that, which in this case is called `source`.
