@@ -11,9 +11,9 @@ Serde uses a code generation library called [Syntex][syntex], along with a
 file. For nightly Rust, Rusoto uses macros to generate the code.
 
 Rusoto takes advantage of this to provide a hybrid approach: Rusoto uses Syntex
-by default, but provides the ability to use macros on nightly Rust by using a
-Cargo [feature][cargo-feature]. Via this method, users can choose to either
-support stable and nightly, or both via feature flags.
+by default, but provides the ability to use macros for code generation on
+nightly Rust by using a Cargo [feature][cargo-feature]. Via this method, users
+can choose to either support stable and nightly, or both via feature flags.
 
 * [Setup Rusoto targetting stable compiler][setup-stable]
 * [Setup Rusoto targetting nightly compiler][setup-nightly]
