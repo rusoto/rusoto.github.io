@@ -1,7 +1,7 @@
 # On Nightly Compiler
 
 If you are using a nightly version of the compiler, you can setup Rusoto to use
-[Serde's][serde] `serde_macros` for the codegen.
+[Serde's][serde] `serde_derive` for the codegen.
 
 **Advantages of this approach**: none of the disadvantages of the
 [stable approach][stable-approach].
