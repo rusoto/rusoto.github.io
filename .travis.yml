@@ -13,6 +13,7 @@ after_success:
   - test $TRAVIS_PULL_REQUEST == "false" &&
     test $TRAVIS_BRANCH == "source" &&
     aws s3 sync --acl public-read --delete _book/ s3://rusoto.org
+    # TODO: cloudfront invalidation
 
 branches:
   except:
