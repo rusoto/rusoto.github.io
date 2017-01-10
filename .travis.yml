@@ -1,3 +1,4 @@
+sudo: required
 language: node_js
 node_js:
   - "6.9.1"
@@ -6,7 +7,7 @@ cache:
     - node_modules # NPM packages
 install:
   - npm install
-  - pip install awscli
+  - sudo pip install awscli
 script:
   - npm run docs:build
 after_success:
