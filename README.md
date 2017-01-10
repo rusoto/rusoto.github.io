@@ -1,5 +1,7 @@
 # rusoto.github.io
 
+[![Build Status](https://travis-ci.org/rusoto/rusoto.github.io.svg?branch=source)](https://travis-ci.org/rusoto/rusoto.github.io)
+
 GitBook documentation for the [rusoto](https://github.com/rusoto) project.
 
 # Requirements
