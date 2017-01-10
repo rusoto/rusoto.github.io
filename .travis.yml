@@ -10,10 +10,10 @@ install:
   - sudo pip install awscli
 script:
   - npm run docs:build
+  - echo "branch is" $TRAVIS_BRANCH "tpullreq is" $TRAVIS_PULL_REQUEST
   # If the build is not a PR and is on source branch, deploy the GitBook to S3.
   - | 
       if [[ $TRAVIS_PULL_REQUEST == "false" && $TRAVIS_BRANCH == "source" ]]; then
-        echo "so far so good"; \
         aws s3 sync --acl public-read --delete _book/ s3://rusoto.org
       else
         echo "conditions not right for publish"
