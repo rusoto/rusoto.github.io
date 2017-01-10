@@ -13,7 +13,7 @@ script:
   # If the build is not a PR and is on source branch, deploy the GitBook to S3.
   - | 
       if [[ $TRAVIS_PULL_REQUEST == "false" && $TRAVIS_BRANCH == "source" ]]; then
-        echo "so far so good"
+        echo "so far so good"; \
         aws s3 sync --acl public-read --delete _book/ s3://rusoto.org
       fi
     # TODO: cloudfront invalidation
