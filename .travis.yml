@@ -10,7 +10,6 @@ install:
   - sudo pip install awscli
 script:
   - npm run docs:build
-after_success:
   # If the build is not a PR and is on source branch, deploy the GitBook to S3.
   - test $TRAVIS_PULL_REQUEST == "false" &&
     test $TRAVIS_BRANCH == "source" &&
