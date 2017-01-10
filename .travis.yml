@@ -6,6 +6,7 @@ cache:
     - node_modules # NPM packages
 install:
   - npm install
+  - pip install awscli
 script:
   - npm run docs:build
 after_success:
