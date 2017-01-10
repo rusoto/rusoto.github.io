@@ -21,5 +21,8 @@ script:
     # TODO: cloudfront invalidation
 
 branches:
-  except:
-    - master
+  only:
+    - source
+    - auto
+notifications:
+  email: false
