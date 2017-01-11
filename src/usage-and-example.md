@@ -43,5 +43,5 @@ fn main() {
 }
 ```
 
-[api-documentation]: {{ book.domain }}/rusoto/rusoto/
+[api-documentation]: https://rusoto.github.io/rusoto/rusoto/
 [supported-aws-services]: /supported-aws-services.html
