@@ -10,8 +10,10 @@ Service | Cargo feature | Stability
 --------|---------------|---------
 All supported services | all | N/A
 [Certificate Manager](https://aws.amazon.com/certificate-manager/) | acm | Needs improvement
+[CloudFormation](https://aws.amazon.com/cloudformation/) | cloudformation | Needs improvement
 [CloudHSM](https://aws.amazon.com/cloudhsm/) | cloudhsm | Needs improvement
 [CloudTrail](https://aws.amazon.com/cloudtrail/) | cloudtrail | Needs improvement
+[CloudWatch](https://aws.amazon.com/cloudwatch/) | cloudwatch | Needs improvement
 [CloudWatch Events](http://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/WhatIsCloudWatchEvents.html) | events | Needs improvement 
 [CloudWatch Logs](http://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/CWL_GettingStarted.html) | logs | Needs improvement 
 [CodeCommit](https://aws.amazon.com/codecommit/) | codecommit | Needs improvement
@@ -38,7 +40,7 @@ All supported services | all | N/A
 [Machine Learning](https://aws.amazon.com/machine-learning/) | machinelearning | Needs improvement 
 [OpsWorks](https://aws.amazon.com/opsworks/) | opsworks | Needs improvement
 [Route53 Domains](http://docs.aws.amazon.com/Route53/latest/APIReference/actions-on-domain-registrations.html) | route53domains | Needs improvement 
-[S3](https://aws.amazon.com/s3/) | s3 | Stable
+[S3](https://aws.amazon.com/s3/) | s3 | Needs improvement
 [Simple Systems Manager](http://docs.aws.amazon.com/ssm/latest/APIReference/Welcome.html) | ssm | Needs improvement 
 [Simple Workflow Service](https://aws.amazon.com/swf/) | swf | Needs improvement
 [SQS](https://aws.amazon.com/sqs/) | sqs | Stable
