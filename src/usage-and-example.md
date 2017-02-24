@@ -7,8 +7,23 @@ other public types are reexported to the crate root. Consult the rustdoc
 documentatation by running `cargo doc` or visiting the online
 [API documentation][api-documentation] for the latest crates.io release.
 
-A simple example of using Rusoto's DynamoDB API to list the names of all the
+An example of using Rusoto's DynamoDB API to list the names of all the
 tables in a database:
+
+Cargo.toml:
+
+```toml
+[package]
+name = "my-crate"
+version = "0.1.0"
+authors = ["My Name <my@email.com>"]
+
+[dependencies.rusoto]
+version = "0.18"
+features = ["dynamodb"]
+```
+
+Rust code:
 
 ```rust
 extern crate rusoto;
