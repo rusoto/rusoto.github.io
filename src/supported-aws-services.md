@@ -34,8 +34,8 @@ All supported services | all | N/A
 [EC2](https://aws.amazon.com/ec2/) | ec2 | Stable
 [EC2 Container Registry](https://aws.amazon.com/ecr/) | ecr | Needs improvement
 [ECS](https://aws.amazon.com/ecs/) | ecs | Stable
-[ElastiCache](https://aws.amazon.com/elasticache/) | elasticache | Stable
-[Elastic Beanstalk](https://aws.amazon.com/elasticbeanstalk/) | elasticbeanstalk | Stable
+[ElastiCache](https://aws.amazon.com/elasticache/) | elasticache | Needs improvement
+[Elastic Beanstalk](https://aws.amazon.com/elasticbeanstalk/) | elasticbeanstalk | Needs improvement
 [Elastic Load Balancing](https://aws.amazon.com/elasticloadbalancing/) | elb | Needs improvement
 [Elastic MapReduce](https://aws.amazon.com/elasticmapreduce/) | emr | Needs improvement 
 [Elastic Transcoder](https://aws.amazon.com/elastictranscoder/) | ets | Stable
