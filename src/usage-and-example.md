@@ -19,7 +19,7 @@ version = "0.1.0"
 authors = ["My Name <my@email.com>"]
 
 [dependencies.rusoto]
-version = "0.18"
+version = "0.23"
 features = ["dynamodb"]
 ```
 
