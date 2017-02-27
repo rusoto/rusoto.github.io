@@ -32,10 +32,11 @@ use std::default::Default;
 
 use rusoto::{DefaultCredentialsProvider, Region};
 use rusoto::dynamodb::{DynamoDbClient, ListTablesInput};
+use rusoto::default_tls_client;
 
 fn main() {
-  let provider = DefaultCredentialsProvider::new().unwrap();
-  let client = DynamoDbClient::new(provider, Region::UsEast1);
+  let credentials = DefaultCredentialsProvider::new().unwrap();
+  let client = DynamoDbClient::new(default_tls_client().unwrap(), credentials, Region::UsEast1);
   let list_tables_input: ListTablesInput = Default::default();
 
   match client.list_tables(&list_tables_input) {
