@@ -1,10 +1,14 @@
 # Usage & Example
 
-Rusoto includes a public module for each AWS service it is compiled for, which
-contains the Rust types for that service's API. A full list of these services
-can be found on the [Supported AWS Services][supported-aws-services] page. All
-other public types are reexported to the crate root. Consult the rustdoc
-documentatation by running `cargo doc` or visiting the online
+Rusoto provides a crate for each AWS service it supports, containing a client
+and all of the associated types for that service. A full list of these services
+can be found on the [Supported AWS Services][supported-aws-services] page.
+
+It also provides a core crate called `rusoto_core`, containing all shared
+functionality across services, such as the list of regions, signed request senders,
+and credential loading.
+
+Consult the rustdoc documentatation by running `cargo doc` or visiting the online
 [API documentation][api-documentation] for the latest crates.io release.
 
 An example of using Rusoto's DynamoDB API to list the names of all the
@@ -18,21 +22,21 @@ name = "my-crate"
 version = "0.1.0"
 authors = ["My Name <my@email.com>"]
 
-[dependencies.rusoto]
-version = "0.23"
-features = ["dynamodb"]
+[dependencies]
+rusoto_core = "0.25.0"
+rusoto_dynamodb = "0.25.0"
 ```
 
 Rust code:
 
 ```rust
-extern crate rusoto;
+extern crate rusoto_core;
+extern crate rusoto_dynamodb;
 
 use std::default::Default;
 
-use rusoto::{DefaultCredentialsProvider, Region};
-use rusoto::dynamodb::{DynamoDbClient, ListTablesInput};
-use rusoto::default_tls_client;
+use rusoto_core::{default_tls_client, DefaultCredentialsProvider, Region};
+use rusoto_dynamodb::{DynamoDb, DynamoDbClient, ListTablesInput};
 
 fn main() {
   let credentials = DefaultCredentialsProvider::new().unwrap();
