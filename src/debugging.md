@@ -26,14 +26,20 @@ To see the output of logging from integration tests, the command needs to be run
 as follows:
 
 ```
-RUST_LOG=debug cargo test --features all
+RUST_LOG=rusoto,hyper=debug cargo test --features all
 ```
 
 To get the logging output as well as the output of any `println!` statements,
 run:
 
 ```
-RUST_LOG=debug cargo test --features all -- --nocapture
+RUST_LOG=rusoto,hyper=debug cargo test --features all -- --nocapture
+```
+
+If more debugging is required, all debug info including details from the compiler can be seen by setting RUST_LOG to `debug`.  This will be noisy but will give a lot of debug information.  For example:
+
+```
+RUST_LOG=debug cargo test --features all
 ```
 
 [crates-io-env_logger]: https://crates.io/crates/env_logger
