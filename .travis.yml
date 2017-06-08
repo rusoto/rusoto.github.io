@@ -16,7 +16,7 @@ script:
       if [[ $TRAVIS_PULL_REQUEST == "false" && $TRAVIS_BRANCH == "source" ]]; then
         aws s3 sync --acl public-read --delete _book/ s3://rusoto.org ;
         aws configure set preview.cloudfront true ;
-        aws cloudfront create-invalidation --distribution-id E1LZO76WJHQFTB;
+        aws cloudfront create-invalidation --distribution-id E1LZO76WJHQFTB --paths "/*";
       else
         echo "conditions not right for publish"
       fi
