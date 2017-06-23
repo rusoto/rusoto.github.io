@@ -10,8 +10,3 @@ For example: `cargo build --release`
 
 * [Improve XML parsing](https://github.com/rusoto/rusoto/issues/362)
 * [Get object by stream](https://github.com/rusoto/rusoto/issues/481)
-
-### Potential compile time improvements
-
-* [Reduce compilation memory usage](https://github.com/rusoto/rusoto/issues/513)
-* [Run less code through serde](https://github.com/rusoto/rusoto/issues/506)
