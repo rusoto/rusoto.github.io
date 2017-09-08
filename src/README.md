@@ -14,5 +14,5 @@ functionality for properly loading and handling AWS credentials.
 
 [rusoto]: https://github.com/rusoto/rusoto "Rusoto"
 [rusoto_core]: https://github.com/rusoto/rusoto/tree/master/rusoto/core "Rusoto Core"
-[credential]: https://github.com/rusoto/rusoto/tree/master/credential "Rusoto credential"
+[credential]: https://github.com/rusoto/rusoto/tree/master/rusoto/credential "Rusoto credential"
 [botocore]: https://github.com/boto/botocore "Botocore"
