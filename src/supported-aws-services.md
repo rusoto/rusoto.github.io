@@ -1,7 +1,7 @@
 # Supported AWS Services
 
-**Stable:** service has not caused many bug reports.  
-**Needs improvement:** service has either generated many bug reports and/or is a little-used service in Rusoto. 
+**Stable:** service has not caused many bug reports.
+**Needs improvement:** service has either generated many bug reports and/or is a little-used service in Rusoto.
 
 Service | Crate | Stability
 --------|---------------|---------
@@ -17,13 +17,13 @@ Service | Crate | Stability
 [CloudSearch](https://aws.amazon.com/cloudsearch/) | [rusoto_cloudsearch](https://crates.io/crates/rusoto_cloudsearch) | Needs improvement
 [CloudTrail](https://aws.amazon.com/cloudtrail/) | [rusoto_cloudtrail](https://crates.io/crates/rusoto_cloudtrail) | Needs improvement
 [CloudWatch](https://aws.amazon.com/cloudwatch/) | [rusoto_cloudwatch](https://crates.io/crates/rusoto_cloudwatch) | Needs improvement
-[CloudWatch Events](http://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/WhatIsCloudWatchEvents.html) | [rusoto_events](https://crates.io/crates/rusoto_events) | Needs improvement 
-[CloudWatch Logs](http://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/CWL_GettingStarted.html) | [rusoto_logs](https://crates.io/crates/rusoto_logs) | Needs improvement 
+[CloudWatch Events](http://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/WhatIsCloudWatchEvents.html) | [rusoto_events](https://crates.io/crates/rusoto_events) | Needs improvement
+[CloudWatch Logs](http://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/CWL_GettingStarted.html) | [rusoto_logs](https://crates.io/crates/rusoto_logs) | Needs improvement
 [CodeBuild](https://aws.amazon.com/codebuild/) | [rusoto_codebuild](https://crates.io/crates/rusoto_codebuild) | Needs improvement
 [CodeCommit](https://aws.amazon.com/codecommit/) | [rusoto_codecommit](https://crates.io/crates/rusoto_codecommit) | Needs improvement
 [CodeDeploy](https://aws.amazon.com/codedeploy/) | [rusoto_codedeploy](https://crates.io/crates/rusoto_codedeploy) | Needs improvement
 [CodePipeline](https://aws.amazon.com/codepipeline/) | [rusoto_codepipeline](https://crates.io/crates/rusoto_codepipeline) | Needs improvement
-[Cognito Identity](http://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html) | [rusoto_cognito-identity](https://crates.io/crates/rusoto_cognito-identity) | Needs improvement 
+[Cognito Identity](http://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html) | [rusoto_cognito-identity](https://crates.io/crates/rusoto_cognito-identity) | Needs improvement
 [Cognito Identity Provider](http://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html) | [rusoto_cognito-identity](https://crates.io/crates/rusoto_cognito_idp) | Needs improvement
 [Config](https://aws.amazon.com/config/) | [rusoto_config](https://crates.io/crates/rusoto_config) | Needs improvement
 [Cost and Usage Report](https://aws.amazon.com/about-aws/whats-new/2015/12/aws-cost-and-usage-reports-comprehensive-and-customizable-reporting-on-your-aws-costs-and-cost-drivers/) | [rusoto_cur](https://crates.io/crates/rusoto_cur) | Needs improvement
@@ -34,7 +34,7 @@ Service | Crate | Stability
 [Direct Connect](https://aws.amazon.com/directconnect/) | [rusoto_directconnect](https://crates.io/crates/rusoto_directconnect) | Needs improvement
 [Directory Service](https://aws.amazon.com/directoryservice/) | [rusoto_ds](https://crates.io/crates/rusoto_ds) | Needs improvement
 [DynamoDB](https://aws.amazon.com/dynamodb/) | [rusoto_dynamodb](https://crates.io/crates/rusoto_dynamodb) | Stable
-[DynamoDB Streams](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Streams.html) | [rusoto_dynamodbstreams](https://crates.io/crates/rusoto_dynamodbstreams) | Needs improvement 
+[DynamoDB Streams](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Streams.html) | [rusoto_dynamodbstreams](https://crates.io/crates/rusoto_dynamodbstreams) | Needs improvement
 [EC2](https://aws.amazon.com/ec2/) | [rusoto_ec2](https://crates.io/crates/rusoto_ec2) | Stable
 [EC2 Container Registry](https://aws.amazon.com/ecr/) | [rusoto_ecr](https://crates.io/crates/rusoto_ecr) | Needs improvement
 [ECS](https://aws.amazon.com/ecs/) | [rusoto_ecs](https://crates.io/crates/rusoto_ecs) | Stable
@@ -56,10 +56,11 @@ Service | Crate | Stability
 [Kinesis Firehose](https://aws.amazon.com/kinesis/firehose/) | [rusoto_firehose](https://crates.io/crates/rusoto_firehose) | Needs improvement
 [Lambda](https://aws.amazon.com/lambda/) | [rusoto_lambda](https://crates.io/crates/rusoto_lambda) | Needs improvement
 [Lightsail](https://amazonlightsail.com/) | [rusoto_lightsail](https://crates.io/crates/rusoto_lightsail) | Needs improvement
-[Machine Learning](https://aws.amazon.com/machine-learning/) | [rusoto_machinelearning](https://crates.io/crates/rusoto_machinelearning) | Needs improvement 
+[Machine Learning](https://aws.amazon.com/machine-learning/) | [rusoto_machinelearning](https://crates.io/crates/rusoto_machinelearning) | Needs improvement
 [Marketplace Commerce Analytics](https://s3.amazonaws.com/awsmp-loadforms/AWS-Marketplace-Commerce-Analytics-Service-Onboarding-and-Technical-Guide.pdf) | [rusoto_marketplacecommerceanalytics](https://crates.io/crates/rusoto_marketplacecommerceanalytics) | Needs improvement
 [Marketplace Metering](http://docs.aws.amazon.com/marketplacemetering/latest/APIReference/Welcome.html) | [rusoto_meteringmarketplace](https://crates.io/crates/rusoto_meteringmarketplace) | Needs improvement
 [Mechanical Turk](https://aws.amazon.com/documentation/mturk/) | [rusoto_mturk](https://crates.io/crates/rusoto_mturk) | Needs improvement
+[Migration Hub](https://aws.amazon.com/migration-hub/) | [rusoto_mgh]() | Needs improvement
 [OpsWorks](https://aws.amazon.com/opsworks/) | [rusoto_opsworks](https://crates.io/crates/rusoto_opsworks) | Needs improvement
 [OpsWorks for Chef Automate](https://aws.amazon.com/opsworks/chefautomate/) | [rusoto_opsworkscm](https://crates.io/crates/rusoto_opsworkscm) | Needs improvement
 [Organizations](https://aws.amazon.com/organizations/) | [rusoto_organizations](https://crates.io/crates/rusoto_organizations) | Needs improvement
@@ -68,13 +69,13 @@ Service | Crate | Stability
 [Rekognition](https://aws.amazon.com/rekognition/) | [rusoto_rekognition](https://crates.io/crates/rusoto_rekognition) | Needs improvement
 [RDS](https://aws.amazon.com/rds/) | [rusoto_rds](https://crates.io/crates/rusoto_rds) | Needs improvement
 [Route53](https://aws.amazon.com/route53/) | [rusoto_route53](https://crates.io/crates/rusoto_route53) | Needs improvement
-[Route53 Domains](http://docs.aws.amazon.com/Route53/latest/APIReference/actions-on-domain-registrations.html) | [rusoto_route53domains](https://crates.io/crates/rusoto_route53domains) | Needs improvement 
+[Route53 Domains](http://docs.aws.amazon.com/Route53/latest/APIReference/actions-on-domain-registrations.html) | [rusoto_route53domains](https://crates.io/crates/rusoto_route53domains) | Needs improvement
 [S3](https://aws.amazon.com/s3/) | [rusoto_s3](https://crates.io/crates/rusoto_s3) | Needs improvement
 [SDB](https://aws.amazon.com/simpledb/) | [rusoto_sdb](https://crates.io/crates/rusoto_sdb) | Needs improvement
 [Service Catalog](https://aws.amazon.com/servicecatalog/) | [rusoto_servicecatalog](https://crates.io/crates/rusoto_servicecatalog) | Needs improvement
 [Simple Email Service](https://aws.amazon.com/ses/) | [rusoto_ses](https://crates.io/crates/rusoto_ses) | Needs improvement
 [Simple Notification Service](https://aws.amazon.com/sns/) | [rusoto_sns](https://crates.io/crates/rusoto_sns) | Needs improvement
-[Simple Systems Manager](http://docs.aws.amazon.com/ssm/latest/APIReference/Welcome.html) | [rusoto_ssm](https://crates.io/crates/rusoto_ssm) | Needs improvement 
+[Simple Systems Manager](http://docs.aws.amazon.com/ssm/latest/APIReference/Welcome.html) | [rusoto_ssm](https://crates.io/crates/rusoto_ssm) | Needs improvement
 [Security Token Service](http://docs.aws.amazon.com/STS/latest/APIReference/Welcome.html) | [rusoto_sts](https://crates.io/crates/rusoto_sts) | Needs improvement
 [Simple Workflow Service](https://aws.amazon.com/swf/) | [rusoto_swf](https://crates.io/crates/rusoto_swf) | Needs improvement
 [Server Migration Service](https://aws.amazon.com/server-migration-service/) | [rusoto_sms](https://crates.io/crates/rusoto_sms) | Needs improvement
