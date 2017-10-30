@@ -7,7 +7,9 @@ Service | Crate | Stability
 --------|---------------|---------
 [AppStream](https://aws.amazon.com/appstream2/) | [rusoto_appstream](https://crates.io/crates/rusoto_appstream) | Needs improvement
 [Application Load Balancer](https://aws.amazon.com/elasticloadbalancing/applicationloadbalancer/) | [rusoto_elbv2](https://crates.io/crates/rusoto_elbv2) | Needs improvement
+[API Gateway](https://aws.amazon.com/api-gateway/) | [rusoto_apigateway](https://crates.io/crates/rusoto_apigateway) | Needs improvement
 [Autoscaling](https://aws.amazon.com/autoscaling/) | [rusoto_autoscaling](https://crates.io/crates/rusoto_autoscaling) | Needs improvement
+[Batch](https://aws.amazon.com/batch/) | [rusoto_batch](https://crates.io/crates/rusoto_batch) | Needs improvement
 [Certificate Manager](https://aws.amazon.com/certificate-manager/) | [rusoto_acm](https://crates.io/crates/rusoto_acm) | Needs improvement
 [CloudFormation](https://aws.amazon.com/cloudformation/) | [rusoto_cloudformation](https://crates.io/crates/rusoto_cloudformation) | Needs improvement
 [CloudFront](https://aws.amazon.com/cloudfront/) | [rusoto_cloudfront](https://crates.io/crates/rusoto_cloudfront) | Needs improvement
@@ -25,6 +27,7 @@ Service | Crate | Stability
 [Cognito Identity Provider](http://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html) | [rusoto_cognito-identity](https://crates.io/crates/rusoto_cognito_idp) | Needs improvement
 [Config](https://aws.amazon.com/config/) | [rusoto_config](https://crates.io/crates/rusoto_config) | Needs improvement
 [Cost and Usage Report](https://aws.amazon.com/about-aws/whats-new/2015/12/aws-cost-and-usage-reports-comprehensive-and-customizable-reporting-on-your-aws-costs-and-cost-drivers/) | [rusoto_cur](https://crates.io/crates/rusoto_cur) | Needs improvement
+[Credential](http://docs.aws.amazon.com/general/latest/gr/aws-security-credentials.html) | [rusiti_credential](https://crates.io/crates/rusoto_credential) | Needs improvement
 [Database Migration Service](https://aws.amazon.com/dms/) | [rusoto_dms](https://crates.io/crates/rusoto_dms) | Needs improvement
 [Data Pipeline](https://aws.amazon.com/datapipeline/) | [rusoto_datapipeline](https://crates.io/crates/rusoto_datapipeline) | Needs improvement
 [Device Farm](https://aws.amazon.com/device-farm/) | [rusoto_devicefarm](https://crates.io/crates/rusoto_devicefarm) | Needs improvement
@@ -38,12 +41,13 @@ Service | Crate | Stability
 [ElastiCache](https://aws.amazon.com/elasticache/) | [rusoto_elasticache](https://crates.io/crates/rusoto_elasticache) | Needs improvement
 [Elastic Beanstalk](https://aws.amazon.com/elasticbeanstalk/) | [rusoto_elasticbeanstalk](https://crates.io/crates/rusoto_elasticbeanstalk) | Needs improvement
 [Elastic Load Balancing](https://aws.amazon.com/elasticloadbalancing/) | [rusoto_elb](https://crates.io/crates/rusoto_elb) | Needs improvement
-[Elastic MapReduce](https://aws.amazon.com/elasticmapreduce/) | [rusoto_emr](https://crates.io/crates/rusoto_emr) | Needs improvement 
+[Elastic MapReduce](https://aws.amazon.com/elasticmapreduce/) | [rusoto_emr](https://crates.io/crates/rusoto_emr) | Needs improvement
 [Elastic Transcoder](https://aws.amazon.com/elastictranscoder/) | [rusoto_ets](https://crates.io/crates/rusoto_ets) | Stable
 [IAM](https://aws.amazon.com/iam/) | [rusoto_iam](https://crates.io/crates/rusoto_iam) | Needs improvement
 [Import Export](https://aws.amazon.com/documentation/importexport/) | [rusoto_importexport](https://crates.io/crates/rusoto_importexport) | Needs improvement
 [Inspector](https://aws.amazon.com/inspector/) | [rusoto_inspector](https://crates.io/crates/rusoto_inspector) | Needs improvement
 [GameLift](https://aws.amazon.com/gamelift/) | [rusoto_gamelift](https://crates.io/crates/rusoto_gamelift) | Needs improvement
+[Glacier](https://aws.amazon.com/glacier/) | [rusoto_glacier](https://crates.io/crates/rusoto_glacier) | Needs improvement
 [Health APIs and Notifications](http://docs.aws.amazon.com/IAM/latest/UserGuide/list_health.html) | [rusoto_health](https://crates.io/crates/rusoto_health) | Needs improvement
 [IoT](https://aws.amazon.com/iot/) | [rusoto_iot](https://crates.io/crates/rusoto_iot) | Needs improvement
 [Key Management Service](https://aws.amazon.com/kms/) | [rusoto_kms](https://crates.io/crates/rusoto_kms) | Stable
@@ -54,10 +58,12 @@ Service | Crate | Stability
 [Lightsail](https://amazonlightsail.com/) | [rusoto_lightsail](https://crates.io/crates/rusoto_lightsail) | Needs improvement
 [Machine Learning](https://aws.amazon.com/machine-learning/) | [rusoto_machinelearning](https://crates.io/crates/rusoto_machinelearning) | Needs improvement 
 [Marketplace Commerce Analytics](https://s3.amazonaws.com/awsmp-loadforms/AWS-Marketplace-Commerce-Analytics-Service-Onboarding-and-Technical-Guide.pdf) | [rusoto_marketplacecommerceanalytics](https://crates.io/crates/rusoto_marketplacecommerceanalytics) | Needs improvement
-[AWSMarketplace Metering](http://docs.aws.amazon.com/marketplacemetering/latest/APIReference/Welcome.html) | [rusoto_meteringmarketplace](https://crates.io/crates/rusoto_meteringmarketplace) | Needs improvement
+[Marketplace Metering](http://docs.aws.amazon.com/marketplacemetering/latest/APIReference/Welcome.html) | [rusoto_meteringmarketplace](https://crates.io/crates/rusoto_meteringmarketplace) | Needs improvement
+[Mechanical Turk](https://aws.amazon.com/documentation/mturk/) | [rusoto_mturk](https://crates.io/crates/rusoto_mturk) | Needs improvement
 [OpsWorks](https://aws.amazon.com/opsworks/) | [rusoto_opsworks](https://crates.io/crates/rusoto_opsworks) | Needs improvement
 [OpsWorks for Chef Automate](https://aws.amazon.com/opsworks/chefautomate/) | [rusoto_opsworkscm](https://crates.io/crates/rusoto_opsworkscm) | Needs improvement
 [Organizations](https://aws.amazon.com/organizations/) | [rusoto_organizations](https://crates.io/crates/rusoto_organizations) | Needs improvement
+[Polly](https://aws.amazon.com/polly/) | [rusoto_polly](https://crates.io/crates/rusoto_polly) | Needs improvement
 [Redshift](https://aws.amazon.com/redshift/) | [rusoto_redshift](https://crates.io/crates/rusoto_redshift) | Needs improvement
 [Rekognition](https://aws.amazon.com/rekognition/) | [rusoto_rekognition](https://crates.io/crates/rusoto_rekognition) | Needs improvement
 [RDS](https://aws.amazon.com/rds/) | [rusoto_rds](https://crates.io/crates/rusoto_rds) | Needs improvement
