@@ -9,4 +9,3 @@ For example: `cargo build --release`
 ### Potential runtime performance improvements
 
 * [Improve XML parsing](https://github.com/rusoto/rusoto/issues/362)
-* [Get object by stream](https://github.com/rusoto/rusoto/issues/481)
