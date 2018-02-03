@@ -6,3 +6,4 @@
 * [Supported AWS Services](supported-aws-services.md)
 * [Debugging](debugging.md)
 * [Performance](performance.md)
+* [Migrations](migrations.md)
