@@ -23,8 +23,8 @@ version = "0.1.0"
 authors = ["My Name <my@email.com>"]
 
 [dependencies]
-rusoto_core = "0.31"
-rusoto_dynamodb = "0.31"
+rusoto_core = "0.32"
+rusoto_dynamodb = "0.32"
 ```
 
 Rust code:
@@ -35,15 +35,14 @@ extern crate rusoto_dynamodb;
 
 use std::default::Default;
 
-use rusoto_core::{default_tls_client, DefaultCredentialsProvider, Region};
+use rusoto_core::Region;
 use rusoto_dynamodb::{DynamoDb, DynamoDbClient, ListTablesInput};
 
 fn main() {
-  let credentials = DefaultCredentialsProvider::new().unwrap();
-  let client = DynamoDbClient::new(default_tls_client().unwrap(), credentials, Region::UsEast1);
+  let client = DynamoDbClient::simple(Region::UsEast1);
   let list_tables_input: ListTablesInput = Default::default();
 
-  match client.list_tables(&list_tables_input) {
+  match client.list_tables(&list_tables_input).sync() {
     Ok(output) => {
       match output.table_names {
         Some(table_name_list) => {

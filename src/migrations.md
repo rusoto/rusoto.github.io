@@ -1,8 +1,6 @@
 # Migrations
 
-### Rusoto 0.31.0 to 0.32.0 (pending)
-
-**Note this is a pre-release, subject to change**
+### Rusoto 0.31.0 to 0.32.0
 
 With `async` support, the easiest migration is to use the new `simple()` constructor on clients and add `.sync()` to the function calls.
 
@@ -23,7 +21,7 @@ let request = DescribeVoicesInput::default();
 println!("{:?}", client.describe_voices(&request).unwrap());
 ```
 
-Rusoto with async:
+Rusoto 0.32.0 with async:
 
 ```rust
 extern crate rusoto_core;
