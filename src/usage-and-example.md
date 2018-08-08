@@ -23,8 +23,8 @@ version = "0.1.0"
 authors = ["My Name <my@email.com>"]
 
 [dependencies]
-rusoto_core = "0.32"
-rusoto_dynamodb = "0.32"
+rusoto_core = "0.33"
+rusoto_dynamodb = "0.33"
 ```
 
 Rust code:
@@ -39,10 +39,10 @@ use rusoto_core::Region;
 use rusoto_dynamodb::{DynamoDb, DynamoDbClient, ListTablesInput};
 
 fn main() {
-  let client = DynamoDbClient::simple(Region::UsEast1);
+  let client = DynamoDbClient::new(Region::UsEast1);
   let list_tables_input: ListTablesInput = Default::default();
 
-  match client.list_tables(&list_tables_input).sync() {
+  match client.list_tables(list_tables_input).sync() {
     Ok(output) => {
       match output.table_names {
         Some(table_name_list) => {

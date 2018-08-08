@@ -2,6 +2,7 @@
 
 Service | Crate
 --------|---------------
+[Alexa for Business](https://aws.amazon.com/alexaforbusiness/) | [rusoto_alexaforbusiness](https://crates.io/crates/rusoto_alexaforbusiness)
 [AppStream](https://aws.amazon.com/appstream2/) | [rusoto_appstream](https://crates.io/crates/rusoto_appstream)
 [Application Autoscaling](http://docs.aws.amazon.com/ApplicationAutoScaling/latest/APIReference/Welcome.html) | [rusoto_application_autoscaling](https://crates.io/crates/rusoto_application_autoscaling)
 [Application Discovery Service](https://aws.amazon.com/application-discovery/) | [rusoto_discovery](https://crates.io/crates/rusoto_discovery)
@@ -91,8 +92,10 @@ Service | Crate
 [Simple Email Service](https://aws.amazon.com/ses/) | [rusoto_ses](https://crates.io/crates/rusoto_ses)
 [Simple Notification Service](https://aws.amazon.com/sns/) | [rusoto_sns](https://crates.io/crates/rusoto_sns)
 [Simple Systems Manager](http://docs.aws.amazon.com/ssm/latest/APIReference/Welcome.html) | [rusoto_ssm](https://crates.io/crates/rusoto_ssm)
+[Secrets Manager](https://aws.amazon.com/secrets-manager/) | [rusoto_secretsmanager](https://crates.io/crates/rusoto_secretsmanager)
 [Security Token Service](http://docs.aws.amazon.com/STS/latest/APIReference/Welcome.html) | [rusoto_sts](https://crates.io/crates/rusoto_sts)
 [Simple Workflow Service](https://aws.amazon.com/swf/) | [rusoto_swf](https://crates.io/crates/rusoto_swf)
+[Serverless Repo](https://aws.amazon.com/serverless/serverlessrepo/) | [rusoto_serverlessrepo](https://crates.io/crates/rusoto_serverlessrepo)
 [Server Migration Service](https://aws.amazon.com/server-migration-service/) | [rusoto_sms](https://crates.io/crates/rusoto_sms)
 [Snowball](https://aws.amazon.com/snowball/) | [rusoto_snowball](https://crates.io/crates/rusoto_snowball)
 [Step Functions](https://aws.amazon.com/step-functions/) | [rusoto_stepfunctions](https://crates.io/crates/rusoto_stepfunctions)
