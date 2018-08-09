@@ -11,11 +11,11 @@ In order to see logging output (e.g. the actual requests made to AWS),
 fn list_objects_test() {
     let _ = env_logger::try_init(); // This initializes the `env_logger`
 
-    let bare_s3 = S3Client::simple(Region::UsWest2);
+    let bare_s3 = S3Client::new(Region::UsWest2);
 
     let mut list_request = ListObjectsRequest::default();
     list_request.bucket = "rusototester".to_string();
-    let result = bare_s3.list_objects(&list_request).sync().unwrap();
+    let result = bare_s3.list_objects(list_request).sync().unwrap();
     println!("result is {:?}", result);
 }
 ```
