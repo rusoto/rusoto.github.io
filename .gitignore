@@ -8,3 +8,4 @@ package-lock.json
 
 # Examples
 src/dynamodb-example/target
+src/dynamodb-example/Cargo.lock
