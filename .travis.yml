@@ -6,7 +6,7 @@ cache:
   directories:
     - node_modules # NPM packages
 before_install:
-  - curl https://sh.rustup.rs -sSf | sh -y
+  - curl https://sh.rustup.rs -sSf | sh -s -- -y
 install:
   - npm install
   - sudo pip install awscli
