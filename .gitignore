@@ -1,8 +1,2 @@
-# NPM
-
-/node_modules/
-npm-debug.log*
-
-# GitBook
-
-/_book/
+book
+_book
