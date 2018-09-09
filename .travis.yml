@@ -5,12 +5,11 @@ install:
   - wget https://github.com/rust-lang-nursery/mdBook/releases/download/v0.1.8/mdbook-v0.1.8-i686-unknown-linux-gnu.tar.gz
   - tar -xzf mdbook-v0.1.8-i686-unknown-linux-gnu.tar.gz
   - ls
-  - ./mdbook
   - sudo pip install awscli
 script:
   - pwd
   - ls
-  - mdbook build
+  - /home/travis/build/rusoto/rusoto.github.io/mdbook build # this is probably fragile
   # If the build is not a PR and is on the source branch, deploy the GitBook to S3.
   # CLI cloudfront invalidation is still in preview: http://docs.aws.amazon.com/cli/latest/reference/cloudfront/create-invalidation.html
   - | 
