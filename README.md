@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/rusoto/rusoto.github.io.svg?branch=source)](https://travis-ci.org/rusoto/rusoto.github.io)
 
-GitBook documentation for the [rusoto](https://github.com/rusoto) project.
+`mdBook` documentation for the [rusoto](https://github.com/rusoto) project.
 
 # Publishing
 
@@ -11,22 +11,13 @@ via Travis CI once the changes are merged into the `source` branch.
 
 # Requirements
 
-* npm
-
-# Preparation
-
-First, install GitBook's CLI with the following commands:
-
-1. `npm install`
-2. `npm run docs:prepare`
+* [mdbook](https://github.com/rust-lang-nursery/mdBook)
 
 # Development
 
-A local development server can be started with `npm run docs:watch`. This server
-will watch for local changes and reflect them in the build directory. The
-development server also hosts the website at `localhost:4000`.
+Install with `cargo install mdbook --vers "^0.1.0"`.
 
-Alternatively, a static site can be built by running `npm run docs:build`.
+`mdbook watch` will regenerate the static output HTML whenever a source file is changed. Use `mdbook watch --open` to open the files in your browser.
 
 # Branch Explanation
 

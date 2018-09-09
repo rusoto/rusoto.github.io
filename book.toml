@@ -1,5 +1,5 @@
 [book]
-authors = ["Matthew Mayer"]
+authors = ["Rusoto maintainers", "Matthew Mayer"]
 multilingual = false
 src = "src"
 title = "Rusoto"

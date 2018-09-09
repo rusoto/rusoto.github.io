@@ -1,4 +1,4 @@
-<span style="float:right">[![github](/img/github.svg)](https://github.com/rusoto/rusoto) [![rustdoc](/img/rustdoc.svg)](https://rusoto.github.io/rusoto/rusoto/) [![Latest Version](https://img.shields.io/crates/v/rusoto_core.svg?style=social)](https://crates.io/crates/rusoto_core)</span>
+<span style="float:right"><a href="https://github.com/rusoto/rusoto" target="_blank"><img src="img/github.svg" alt="github"></a> <a href="https://rusoto.github.io/rusoto/rusoto/" target="_blank"><img src="img/rustdoc.svg" alt="rustdoc"></a> [![Latest Version](https://img.shields.io/crates/v/rusoto_core.svg?style=social)](https://crates.io/crates/rusoto_core)</span>
 
 # Rusoto
 
