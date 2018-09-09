@@ -8,9 +8,10 @@ install:
   - sudo pip install awscli
 script:
   - pwd
-  - ls
+  - ls -l
   - file ./mdbook
-  - /home/travis/build/rusoto/rusoto.github.io/mdbook build # this is probably fragile
+  - chmod +x mdbook
+  - ./mdbook build
   # If the build is not a PR and is on the source branch, deploy the GitBook to S3.
   # CLI cloudfront invalidation is still in preview: http://docs.aws.amazon.com/cli/latest/reference/cloudfront/create-invalidation.html
   - | 
