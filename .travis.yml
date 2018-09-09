@@ -5,6 +5,7 @@ install:
   - wget https://github.com/rust-lang-nursery/mdBook/releases/download/v0.1.8/mdbook-v0.1.8-i686-unknown-linux-gnu.tar.gz
   - tar -xzf mdbook-v0.1.8-i686-unknown-linux-gnu.tar.gz
   - ls
+  - ./mdbook
   - sudo pip install awscli
 script:
   - pwd
