@@ -6,9 +6,17 @@ Rusoto uses the [log][log-repo] logging facade. For tests, Rusoto uses
 In order to see logging output (e.g. the actual requests made to AWS),
 `env_logger` needs to be initialized:
 
-```rust
-#[test]
-fn list_objects_test() {
+```rust,no_run
+extern crate rusoto_core;
+extern crate rusoto_s3;
+extern crate env_logger;
+
+use std::default::Default;
+
+use rusoto_core::Region;
+use rusoto_s3::{S3, S3Client, ListObjectsRequest};
+
+fn main() {
     let _ = env_logger::try_init(); // This initializes the `env_logger`
 
     let bare_s3 = S3Client::new(Region::UsWest2);

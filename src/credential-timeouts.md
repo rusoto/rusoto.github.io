@@ -4,7 +4,7 @@ If AWS credentials aren't found locally, Rusoto attempts to query the ECS contai
 
 To improve responsiveness of credential sourcing, timeouts can be provided to the credential provider. This example uses a 200ms timeout:
 
-```rust
+```rust,no_run
 extern crate rusoto_core;
 extern crate rusoto_s3;
 

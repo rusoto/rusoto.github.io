@@ -29,7 +29,7 @@ rusoto_dynamodb = "0.33"
 
 Rust code:
 
-```rust
+```rust,no_run
 extern crate rusoto_core;
 extern crate rusoto_dynamodb;
 
