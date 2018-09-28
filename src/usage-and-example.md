@@ -42,7 +42,7 @@ fn main() {
   let client = DynamoDbClient::new(Region::UsEast1);
   let list_tables_input: ListTablesInput = Default::default();
 
-  match client.typohere(list_tables_input).sync() {
+  match client.list_tables(list_tables_input).sync() {
     Ok(output) => {
       match output.table_names {
         Some(table_name_list) => {
