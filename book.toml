@@ -1,0 +1,5 @@
+[book]
+authors = ["Rusoto maintainers", "Matthew Mayer"]
+multilingual = false
+src = "src"
+title = "Rusoto"
