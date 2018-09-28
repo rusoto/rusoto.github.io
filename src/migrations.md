@@ -6,7 +6,7 @@ With `async` support, the easiest migration is to use the new `simple()` constru
 
 Rusoto 0.31.0:
 
-```rust
+```rust,ignore
 extern crate rusoto_core;
 extern crate rusoto_polly;
 
@@ -23,7 +23,7 @@ println!("{:?}", client.describe_voices(&request).unwrap());
 
 Rusoto 0.32.0 with async:
 
-```rust
+```rust,ignore
 extern crate rusoto_core;
 extern crate rusoto_polly;
 
@@ -73,7 +73,7 @@ rusoto_rds = {version = "0.25.0"}
 
 Once the new crates have been brought in, use the new crates in your code.  A sample before:
 
-```rust
+```rust,ignore
 extern crate rusoto;
 
 use rusoto::rds::{RdsClient, CreateDBInstanceMessage, DescribeDBInstancesMessage};
@@ -82,7 +82,7 @@ use rusoto::{DefaultCredentialsProvider, Region, default_tls_client};
 
 And after:
 
-```rust
+```rust,ignore
 extern crate rusoto_core;
 extern crate rusoto_rds;
 use rusoto_rds::{Rds, RdsClient, CreateDBInstanceMessage, DescribeDBInstancesMessage};

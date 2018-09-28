@@ -2,10 +2,11 @@ sudo: required
 language: rust
 rust: stable
 install:
-  - cargo install mdbook --vers "^0.1.0"
+  - cargo install mdbook --vers "^0.2.0"
   - sudo pip install awscli
 script:
-  - mdbook build
+  - (cd rusoto_docs_tester && cargo test)
+  - mdbook build # be nice if we could make this a debug build to save time. Or just download the binary.
   # If the build is not a PR and is on the source branch, deploy the book to S3.
   # CLI cloudfront invalidation is still in preview: http://docs.aws.amazon.com/cli/latest/reference/cloudfront/create-invalidation.html
   - | 
