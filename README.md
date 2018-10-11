@@ -15,7 +15,7 @@ via Travis CI once the changes are merged into the `source` branch.
 
 # Development
 
-Install with `cargo install mdbook --vers "^0.1.0"`.
+Install with `cargo install mdbook --vers "^0.2.0"`.
 
 `mdbook watch` will regenerate the static output HTML whenever a source file is changed. Use `mdbook watch --open` to open the files in your browser.
 
