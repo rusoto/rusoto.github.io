@@ -1,3 +1,4 @@
 book
 _book
 rusoto_docs_tester/target
+rusoto_docs_tester/Cargo.lock
