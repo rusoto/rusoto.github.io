@@ -36,6 +36,7 @@ Service | Crate
 [Cognito Identity](http://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html) | [rusoto_cognito-identity](https://crates.io/crates/rusoto_cognito-identity)
 [Cognito Identity Provider](http://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html) | [rusoto_cognito-identity](https://crates.io/crates/rusoto_cognito_idp)
 [Cognito Sync](http://docs.aws.amazon.com/cognitosync/latest/APIReference/Welcome.html) | [rusoto_cognito_sync](https://crates.io/crates/rusoto_cognito_sync)
+[Comprehend](https://aws.amazon.com/comprehend/) | [rusoto_comprehend](https://crates.io/crates/rusoto_comprehend)
 [Config](https://aws.amazon.com/config/) | [rusoto_config](https://crates.io/crates/rusoto_config)
 [Connect](https://aws.amazon.com/connect/) | [rusoto_connect](https://crates.io/crates/rusoto_connect)
 [Cost and Usage Report](https://aws.amazon.com/about-aws/whats-new/2015/12/aws-cost-and-usage-reports-comprehensive-and-customizable-reporting-on-your-aws-costs-and-cost-drivers/) | [rusoto_cur](https://crates.io/crates/rusoto_cur)
