@@ -6,7 +6,7 @@ Rusoto supports all regions AWS supports. There is also a `Default` implementati
 
 Custom Regions can be used for interacting with services that behave like AWS services, such as [Ceph](https://ceph.com/), [Minio](https://minio.io/) and [local DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DynamoDBLocal.html).
 
-For a complete example of using local DynamoDB, see [this sample project](https://github.com/matthewkmayer/matthewkmayer.github.io/tree/custom-region-sample/samples/rusoto-local-dynamodb). (TODO: update to master branch once that is merged)
+For a complete example of using local DynamoDB, see [this sample project](https://github.com/matthewkmayer/matthewkmayer.github.io/tree/master/samples/rusoto-local-dynamodb).
 
 ```rust,no_run
 extern crate rusoto_core;
