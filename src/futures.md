@@ -1,12 +1,30 @@
 # Using Rusoto Futures
 
-## All API calls return a future
+Rusoto Futures are like other Futures in Rust. They implement the `Future` trait:
 
-## .sync()
+```rust,no_run
+Impl Future for RusotoFuture
+```
 
-## Chaining futures together
+Treating all calls to AWS services as asynchronous allows for different ways to handle network calls, potentially improving throughput and resource usage.
 
-## Examples
+### All API calls return a future
+
+All Rusoto calls to AWS [return a Future](https://rusoto.github.io/rusoto/rusoto_core/struct.RusotoFuture.html). This Future can be acted on immediately, saved for later use or chained/combined with other Futures before running.
+
+### .sync()
+
+Rusoto supports returning Futures to be executed later as well as synchronous, blocking calls. The [.sync()](https://rusoto.github.io/rusoto/rusoto_core/struct.RusotoFuture.html#method.sync) function on Rusoto Futures allows this behavior.
+
+Under the hood it uses a `tokio::runtime` [to immediately run the Future.](https://github.com/rusoto/rusoto/blob/master/rusoto/core/src/future.rs).
+
+### Chaining futures together
+
+The usual collection of Future combinators can be used on Rusoto Futures. To read more about combinators, see [the tokio docs on Futures](https://tokio.rs/docs/futures/combinators/). Another resource to help sort out compiliation errors with Futures is the [Futures Cheatsheet](https://rufflewind.com/img/rust-futures-cheatsheet.html).
+
+The example below uses the `.then()` combinator to chain multiple Futures together.
+
+### Examples
 
 See [Chaining Rusoto Futures](https://matthewkmayer.github.io/blag/public/post/chaining-rusoto-futures/) blog post for more information and links to complete examples.
 
