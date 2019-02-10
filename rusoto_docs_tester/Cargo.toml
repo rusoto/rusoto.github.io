@@ -10,6 +10,8 @@ rusoto_ecs = "0.36"
 rusoto_dynamodb = "0.36"
 rusoto_s3 = "0.36"
 env_logger = "0.5"
+tokio-core = "0.1"
+futures = "0.1"
 
 [build-dependencies]
 skeptic = "0.13"
