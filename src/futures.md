@@ -2,7 +2,7 @@
 
 Rusoto Futures are like other Futures in Rust. They implement the `Future` trait:
 
-```rust,no_run
+```rust,ignore
 Impl Future for RusotoFuture
 ```
 
