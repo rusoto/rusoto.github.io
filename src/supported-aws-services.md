@@ -3,12 +3,15 @@
 Service | Crate
 --------|---------------
 [Alexa for Business](https://aws.amazon.com/alexaforbusiness/) | [rusoto_alexaforbusiness](https://crates.io/crates/rusoto_alexaforbusiness)
+[Amplify](https://docs.aws.amazon.com/cli/latest/reference/amplify/index.html) | [rusoto_amplify](https://crates.io/crates/rusoto_amplify)
 [AppStream](https://aws.amazon.com/appstream2/) | [rusoto_appstream](https://crates.io/crates/rusoto_appstream)
 [AppSync](https://aws.amazon.com/appsync/) | [rusoto_appsync](https://crates.io/crates/rusoto_appsync)
 [Application Autoscaling](http://docs.aws.amazon.com/ApplicationAutoScaling/latest/APIReference/Welcome.html) | [rusoto_application_autoscaling](https://crates.io/crates/rusoto_application_autoscaling)
 [Application Discovery Service](https://aws.amazon.com/application-discovery/) | [rusoto_discovery](https://crates.io/crates/rusoto_discovery)
 [Application Load Balancer](https://aws.amazon.com/elasticloadbalancing/applicationloadbalancer/) | [rusoto_elbv2](https://crates.io/crates/rusoto_elbv2)
 [API Gateway](https://aws.amazon.com/api-gateway/) | [rusoto_apigateway](https://crates.io/crates/rusoto_apigateway)
+[API Gateway Management](https://docs.aws.amazon.com/cli/latest/reference/apigatewaymanagementapi/index.html) | [rusoto_apigatewaymanagementapi](https://crates.io/crates/rusoto_apigatewaymanagementapi)
+[API Gateway V2](https://docs.aws.amazon.com/cli/latest/reference/apigatewayv2/index.html) | [rusoto_apigatewayv2](https://crates.io/crates/rusoto_apigatewayv2)
 [Athena](https://aws.amazon.com/athena/) | [rusoto_athena](https://crates.io/crates/rusoto_athena)
 [Autoscaling](https://aws.amazon.com/autoscaling/) | [rusoto_autoscaling](https://crates.io/crates/rusoto_autoscaling)
 [Autoscaling Plans](https://aws.amazon.com/autoscaling/) | [rusoto_autoscaling_plans](https://crates.io/crates/rusoto_autoscaling_plans)
@@ -110,6 +113,7 @@ Service | Crate
 [Pricing](https://aws.amazon.com/ec2/pricing/) | [rusoto_pricing](https://crates.io/crates/rusoto_pricing)
 [Redshift](https://aws.amazon.com/redshift/) | [rusoto_redshift](https://crates.io/crates/rusoto_redshift)
 [Rekognition](https://aws.amazon.com/rekognition/) | [rusoto_rekognition](https://crates.io/crates/rusoto_rekognition)
+[Resource Access Manager](https://docs.aws.amazon.com/cli/latest/reference/ram/index.html) | [rusoto_ram](https://crates.io/crates/rusoto_ram)
 [Resource Groups](https://docs.aws.amazon.com/ARG/latest/userguide/welcome.html) | [rusoto_resource_groups](https://crates.io/crates/rusoto_resource_groups)
 [Resource Groups Tagging](http://docs.aws.amazon.com/resourcegroupstagging/latest/APIReference/Welcome.html) | [rusoto_resourcegroupstaggingapi](https://crates.io/crates/rusoto_resourcegroupstaggingapi)
 [RDS](https://aws.amazon.com/rds/) | [rusoto_rds](https://crates.io/crates/rusoto_rds)
