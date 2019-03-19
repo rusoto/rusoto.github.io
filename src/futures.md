@@ -39,7 +39,7 @@ use rusoto_core::Region;
 use rusoto_dynamodb::{
     AttributeDefinition, AttributeValue, CreateTableInput, CreateTableOutput, DynamoDb,
     DynamoDbClient, GetItemError, GetItemInput, GetItemOutput, KeySchemaElement,
-    ProvisionedThroughput, UpdateItemInput, UpdateItemOutput,
+    UpdateItemInput, UpdateItemOutput,
 };
 use std::collections::HashMap;
 use tokio_core::reactor::Core;
@@ -74,15 +74,10 @@ fn make_create_table_future(client: &DynamoDbClient) ->
         attribute_name: "foo_name".to_string(),
         key_type: "HASH".to_string(), // case sensitive
     };
-    let p_throughput = ProvisionedThroughput {
-        read_capacity_units: 1,
-        write_capacity_units: 1,
-    };
     let make_table_request = CreateTableInput {
         table_name: "a-testing-table".to_string(),
         attribute_definitions: vec![attribute_def],
         key_schema: vec![k_schema],
-        provisioned_throughput: p_throughput,
         ..Default::default()
     };
 
