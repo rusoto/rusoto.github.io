@@ -10,11 +10,11 @@ Treating all calls to AWS services as asynchronous allows for different ways to 
 
 ### All API calls return a future
 
-All Rusoto calls to AWS [return a Future](https://rusoto.github.io/rusoto/rusoto_core/struct.RusotoFuture.html). This Future can be acted on immediately, saved for later use or chained/combined with other Futures before running.
+All Rusoto calls to AWS [return a Future](https://docs.rs/rusoto_core/latest/rusoto_core/struct.RusotoFuture.html). This Future can be acted on immediately, saved for later use or chained/combined with other Futures before running.
 
 ### .sync()
 
-Rusoto supports returning Futures to be executed later as well as synchronous, blocking calls. The [.sync()](https://rusoto.github.io/rusoto/rusoto_core/struct.RusotoFuture.html#method.sync) function on Rusoto Futures allows this behavior.
+Rusoto supports returning Futures to be executed later as well as synchronous, blocking calls. The [.sync()](https://docs.rs/rusoto_core/latest/rusoto_core/struct.RusotoFuture.html#method.sync) function on Rusoto Futures allows this behavior.
 
 Under the hood it uses a `tokio::runtime` [to immediately run the Future.](https://github.com/rusoto/rusoto/blob/master/rusoto/core/src/future.rs).
 
