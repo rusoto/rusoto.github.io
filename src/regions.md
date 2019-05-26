@@ -1,6 +1,6 @@
 # Regions
 
-Rusoto supports all regions AWS supports. There is also a `Default` implementation that reads from environment variables `AWS_DEFAULT_REGION` or `AWS_REGION`. For more information and to see the list of regions, see the [Region API documentation](https://rusoto.github.io/rusoto/rusoto_core/region/enum.Region.html).
+Rusoto supports all regions AWS supports. There is also a `Default` implementation that reads from environment variables `AWS_DEFAULT_REGION` or `AWS_REGION`. For more information and to see the list of regions, see the [Region API documentation](https://docs.rs/rusoto_core/latest/rusoto_core/region/enum.Region.html).
 
 ## Custom Regions
 

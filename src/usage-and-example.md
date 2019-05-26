@@ -62,5 +62,5 @@ fn main() {
 }
 ```
 
-[api-documentation]: https://rusoto.github.io/rusoto/rusoto/
+[api-documentation]: https://docs.rs/rusoto_core
 [supported-aws-services]: /supported-aws-services.html
