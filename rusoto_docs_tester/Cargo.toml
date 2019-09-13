@@ -12,6 +12,9 @@ rusoto_s3 = "0.37"
 env_logger = "0.5"
 tokio-core = "0.1"
 futures = "0.1"
+native-tls = "0.2.1"
+hyper-tls = "0.3.1"
+hyper = "0.12.11"
 
 [build-dependencies]
 skeptic = "0.13"
