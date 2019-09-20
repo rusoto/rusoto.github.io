@@ -1,5 +1,80 @@
 # Migrations
 
+### Rusoto Versions < 0.38.0 to Versions >= 0.38.0 Error Handling
+Rusoto version 0.38.0 introduced the enum `rusoto_core::RusotoError`. In versions
+before 0.38.0 errors would be typed as themsevles such as  `rusoto_s3::CreateBucketError`.
+In versions >= 0.38.0 the service method errors would be wrapped in the new enum,
+such as `rusoto_core::RusotoError<rusoto_s3::CreateBucketError>`.
+
+Rusoto < 0.38.0:
+
+```rust, ignore
+extern crate rusoto_core;
+extern crate rusoto_s3;
+
+use rusoto_core::Region;
+use rusoto_s3::{CreateBucketError, CreateBucketOutput, CreateBucketRequest, S3Client, S3};
+
+fn main() {
+    let s3_client = S3Client::new(Region::UsEast1);
+    let bucket_name = "itshabib-buckets".to_owned();
+
+    match create_bucket_sync(&s3_client, bucket_name.clone()) {
+        Ok(res) => println!("successfully created bucket! resp: {:#?}", res),
+        Err(err) => println!("Error creating bucket. err: {:#?}", err),
+    };
+}
+
+
+// error handling for versions < 0.38
+fn create_bucket_sync(
+    s3_client: &S3Client,
+    bucket_name: String,
+    // errors are not wrapped by RusotoError in version < 0.38
+) -> Result<CreateBucketOutput, CreateBucketError> {
+    let create_bucket_req = CreateBucketRequest {
+        bucket: bucket_name.clone(),
+        ..Default::default()
+    };
+
+    s3_client.create_bucket(create_bucket_req).sync()
+}
+```
+
+Rusoto >= 0.38.0:
+```rust, ignore
+extern crate rusoto_core;
+extern crate rusoto_s3;
+
+use rusoto_core::{Region, RusotoError};
+use rusoto_s3::{CreateBucketError, CreateBucketOutput, CreateBucketRequest, S3Client, S3};
+
+fn main() {
+    let s3_client = S3Client::new(Region::UsEast1);
+    let bucket_name = "itshabib-buckets".to_owned();
+
+    match create_bucket_sync(&s3_client, bucket_name.clone()) {
+        Ok(res) => println!("successfully created bucket! resp: {:#?}", res),
+        Err(err) => println!("Error creating bucket. err: {:#?}", err),
+    };
+}
+
+// error handling for versions >= 0.38
+fn create_bucket_sync(
+    s3_client: &S3Client,
+    bucket_name: String,
+    // service method error is wrapped in RusotoError enum
+) -> Result<CreateBucketOutput, RusotoError<CreateBucketError>> {
+    let create_bucket_req = CreateBucketRequest {
+        bucket: bucket_name.clone(),
+        ..Default::default()
+    };
+
+    s3_client.create_bucket(create_bucket_req).sync()
+}
+
+```
+
 ### Rusoto 0.31.0 to 0.32.0
 
 With `async` support, the easiest migration is to use the new `simple()` constructor on clients and add `.sync()` to the function calls.
@@ -17,6 +92,7 @@ use rusoto_core::{DefaultCredentialsProvider, Region, default_tls_client};
 let credentials = DefaultCredentialsProvider::new().unwrap();
 let client = PollyClient::new(default_tls_client().unwrap(), credentials, Region::UsEast1);
 let request = DescribeVoicesInput::default();
+
 
 println!("{:?}", client.describe_voices(&request).unwrap());
 ```
