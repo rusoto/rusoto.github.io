@@ -33,8 +33,9 @@ fn main() {
         .build()
         .expect("failed to build tls connector");
 
-    // 2. create http connector
-    let http_connector = HttpConnector::new(1);
+    // 2. create http connector - make sure to not enforce http
+    let mut http_connector = HttpConnector::new(4);
+    http_connector.enforce_http(false);
 
     // 3. create https connector
     let https_connector = HttpsConnector::from((http_connector, tls_connector));
