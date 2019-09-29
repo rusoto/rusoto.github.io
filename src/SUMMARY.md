@@ -7,6 +7,7 @@
   - [Using Rusoto in Lambdas](lambdas.md)
   - [Regions and Custom Regions](regions.md)
   - [Using Rusoto Futures](futures.md)
+  - [Disabling SSL Certificate Check](disable-ssl-cert-check.md)
 - [Supported AWS Services](supported-aws-services.md)
 - [Debugging](debugging.md)
 - [Performance](performance.md)
