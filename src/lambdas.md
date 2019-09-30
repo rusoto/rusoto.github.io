@@ -19,7 +19,3 @@ rusoto_sqs = {version = "0.36.0", default_features = false, features=["rustls"]}
 ```
 
 The default features must be disabled since that uses the `hyper-tls` crate. These flags can be found in the [rusoto_core Cargo.toml](https://github.com/rusoto/rusoto/blob/master/rusoto/core/Cargo.toml).
-
-## Resources and Links
-
-- [AWS Lambda and DynamoDB with Rust](https://medium.com/@kkostov/aws-lambda-dynamodb-rust-df84bd15d29b)
