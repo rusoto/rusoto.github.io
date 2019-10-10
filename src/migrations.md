@@ -2,7 +2,7 @@
 
 ### Rusoto Versions < 0.38.0 to Versions >= 0.38.0 Error Handling
 Rusoto version 0.38.0 introduced the enum `rusoto_core::RusotoError`. In versions
-before 0.38.0 errors would be typed as themsevles such as  `rusoto_s3::CreateBucketError`.
+before 0.38.0 errors would be typed as themselves such as  `rusoto_s3::CreateBucketError`.
 In versions >= 0.38.0 the service method errors would be wrapped in the new enum,
 such as `rusoto_core::RusotoError<rusoto_s3::CreateBucketError>`.
 
@@ -42,7 +42,7 @@ fn create_bucket_sync(
 ```
 
 Rusoto >= 0.38.0:
-```rust, ignore
+```rust, no_run
 extern crate rusoto_core;
 extern crate rusoto_s3;
 

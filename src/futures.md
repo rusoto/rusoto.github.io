@@ -35,7 +35,7 @@ extern crate rusoto_dynamodb;
 extern crate tokio_core;
 
 use futures::future::Future;
-use rusoto_core::Region;
+use rusoto_core::{Region, RusotoError};
 use rusoto_dynamodb::{
     AttributeDefinition, AttributeValue, CreateTableInput, CreateTableOutput, DynamoDb,
     DynamoDbClient, GetItemError, GetItemInput, GetItemOutput, KeySchemaElement,
@@ -100,7 +100,7 @@ fn make_upsert_item_future(
 fn make_get_item_future(
     client: &DynamoDbClient,
     item: &HashMap<String, AttributeValue>,
-) -> impl Future<Item = GetItemOutput, Error = GetItemError> {
+) -> impl Future<Item = GetItemOutput, Error = RusotoError<GetItemError>> {
     // future for getting the entry
     let get_item_request = GetItemInput {
         key: item.clone(),
