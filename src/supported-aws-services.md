@@ -4,6 +4,7 @@ Service | Crate
 --------|---------------
 [Alexa for Business](https://aws.amazon.com/alexaforbusiness/) | [rusoto_alexaforbusiness](https://crates.io/crates/rusoto_alexaforbusiness)
 [Amplify](https://docs.aws.amazon.com/cli/latest/reference/amplify/index.html) | [rusoto_amplify](https://crates.io/crates/rusoto_amplify)
+[App Mesh](https://aws.amazon.com/app-mesh/) | [rusoto_appmesh](https://crates.io/crates/rusoto_appmesh)
 [AppStream](https://aws.amazon.com/appstream2/) | [rusoto_appstream](https://crates.io/crates/rusoto_appstream)
 [AppSync](https://aws.amazon.com/appsync/) | [rusoto_appsync](https://crates.io/crates/rusoto_appsync)
 [Application Autoscaling](http://docs.aws.amazon.com/ApplicationAutoScaling/latest/APIReference/Welcome.html) | [rusoto_application_autoscaling](https://crates.io/crates/rusoto_application_autoscaling)
@@ -58,6 +59,7 @@ Service | Crate
 [DynamoDB Streams](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Streams.html) | [rusoto_dynamodbstreams](https://crates.io/crates/rusoto_dynamodbstreams)
 [EC2](https://aws.amazon.com/ec2/) | [rusoto_ec2](https://crates.io/crates/rusoto_ec2)
 [EC2 Container Registry](https://aws.amazon.com/ecr/) | [rusoto_ecr](https://crates.io/crates/rusoto_ecr)
+[EC2 Instance Connect](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Connect-using-EC2-Instance-Connect.html) | [rusoto_ec2_instance_connect](https://crates.io/crates/rusoto_ec2_instance_connect)
 [ECS](https://aws.amazon.com/ecs/) | [rusoto_ecs](https://crates.io/crates/rusoto_ecs)
 [EKS](https://aws.amazon.com/eks/) | [rusoto_eks](https://crates.io/crates/rusoto_eks)
 [ElastiCache](https://aws.amazon.com/elasticache/) | [rusoto_elasticache](https://crates.io/crates/rusoto_elasticache)
