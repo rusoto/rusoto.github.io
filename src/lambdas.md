@@ -13,9 +13,9 @@ Lambda environments are x86 64 bit Linux. Existing Rust code can be cross-compil
 The `rustls` option must be set on the project's Cargo.toml file for both the `rusoto_core` crate and any Rusoto service crates used. For example, to use `rustls` with S3 and SQS:
 
 ```
-rusoto_core = {version = "0.36.0", default_features = false, features=["rustls"]}
-rusoto_s3 = {version = "0.36.0", default_features = false, features=["rustls"]}
-rusoto_sqs = {version = "0.36.0", default_features = false, features=["rustls"]}
+rusoto_core = {version = "0.42.0", default_features = false, features=["rustls"]}
+rusoto_s3 = {version = "0.42.0", default_features = false, features=["rustls"]}
+rusoto_sqs = {version = "0.42.0", default_features = false, features=["rustls"]}
 ```
 
 The default features must be disabled since that uses the `hyper-tls` crate. These flags can be found in the [rusoto_core Cargo.toml](https://github.com/rusoto/rusoto/blob/master/rusoto/core/Cargo.toml).

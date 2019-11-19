@@ -5,10 +5,10 @@ authors = ["Matthew Mayer <matthewkmayer@gmail.com>"]
 build = "build.rs"
 
 [dependencies]
-rusoto_core = "0.41"
-rusoto_ecs = "0.41"
-rusoto_dynamodb = "0.41"
-rusoto_s3 = "0.41"
+rusoto_core = "0.42"
+rusoto_ecs = "0.42"
+rusoto_dynamodb = "0.42"
+rusoto_s3 = "0.42"
 env_logger = "0.5"
 tokio-core = "0.1"
 futures = "0.1"
