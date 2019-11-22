@@ -23,8 +23,8 @@ version = "0.1.0"
 authors = ["My Name <my@email.com>"]
 
 [dependencies]
-rusoto_core = "0.35"
-rusoto_dynamodb = "0.35"
+rusoto_core = "0.42"
+rusoto_dynamodb = "0.42"
 ```
 
 Rust code:
