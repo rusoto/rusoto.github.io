@@ -2,7 +2,7 @@ sudo: required
 language: rust
 rust: stable
 install:
-  - cargo install mdbook --vers "^0.2.0"
+  - cargo install mdbook --vers "0.3.5"
   - sudo pip install awscli
 script:
   - (cd rusoto_docs_tester && cargo test)
