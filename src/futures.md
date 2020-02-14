@@ -20,7 +20,7 @@ Under the hood it uses a `tokio::runtime` [to immediately run the Future.](https
 
 ### Chaining futures together
 
-The usual collection of Future combinators can be used on Rusoto Futures. To read more about combinators, see [the tokio docs on Futures](https://tokio.rs/docs/futures/combinators/). Another resource to help sort out compiliation errors with Futures is the [Futures Cheatsheet](https://rufflewind.com/img/rust-futures-cheatsheet.html).
+The usual collection of Future combinators can be used on Rusoto Futures. To read more about combinators, see [the tokio docs on Futures](https://tokio.rs/docs/futures/combinators/). Another resource to help sort out compilation errors with Futures is the [Futures Cheatsheet](https://rufflewind.com/img/rust-futures-cheatsheet.html).
 
 The example below uses the `.then()` combinator to chain multiple Futures together.
 
