@@ -4,7 +4,7 @@ Lambdas are a great place to use Rusoto! The runtime performance keeps costs dow
 
 ## Building for Lambda
 
-Lambda environments are x86 64 bit Linux. Existing Rust code can be cross-compiled from a different platform for this target. For example, on a Macbook, one can compile a Linux executable for Lambda. See [Creating my first AWS Lambda using Rust](https://medium.com/@kkostov/rust-aws-lambda-30a1b92d4009) for more information on setup.
+Lambda environments are x86 64 bit Linux. Existing Rust code can be cross-compiled from a different platform for this target. For example, on a Macbook, one can compile a Linux executable for Lambda. See [Creating my first AWS Lambda using Rust](https://www.iamkonstantin.eu/blog/post-2018-12-02/) for more information on setup.
 
 ### Rustls
 
